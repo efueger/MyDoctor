@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - "2.2.3"
 env:
-  - DB=postgresql
+  - CODECLIMATE_REPO_TOKEN=8f04d03c325c8b2cec4376381cbb61c880b29d82353787708e76fbe886925383
 script: 
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
